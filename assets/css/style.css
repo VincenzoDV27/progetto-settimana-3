@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-image: url("../img/background-day.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: calc(100vh - 134px);
+  padding: 40px 20px;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+label {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* nav-bar */
+header {
+  background-color: #032668;
+}
+
+header img {
+  width: 150px;
+  padding-left: 20px;
+}
+
+.contacts-navbar {
+  float: right;
+  text-decoration: none;
+  padding: 50px;
+  color: white;
+  font-size: 20px;
+}
+
+.day-night {
+  margin-top: 20px;
+  text-align: center;
+  display: inline;
+  float: right;
+  color: white;
+}
+
+.day-night button {
+  background-color: #045cff;
+  border: 1px solid wheat;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+}
+
+h1 {
+  margin: 20px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+/* FORM */
+
+.reserve {
+  max-width: 350px;
+  margin: 0px auto;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.reserve h2 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.reserve label,
+.reserve input {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.reserve label {
+  text-align: left;
+  color: black;
+}
+
+.reserve input {
+  padding: 10px;
+}
+
+.reserve select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.btnReserve {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+
+  background: linear-gradient(to right, #078b50, #f28b36);
+  color: white;
+
+  border: none;
+  border-radius: 25px;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+/* INFO E CONTATTI */
+
+section {
+  text-align: center;
+}
+
+.position {
+  padding: 20px;
+}
+
+iframe {
+  padding-top: 20px;
+  width: 480px;
+  height: 240px;
+}
+
+.social p {
+  display: inline-block;
+  padding: 5px;
+}
+
+.social i {
+  margin-right: 2px;
+}

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trinity Sport Village</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LOGO -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="module" src="assets/js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- NAV-BAR -->
+      <div class="nav-bar">
+        <img src="assets/img/logo.png" alt="logo sito web" />
+        <a href="#contatti" class="contacts-navbar">Contatti</a>
+        <!-- CAMBIA TEMA -->
+        <div class="day-night">
+          <p>Cambia tema:</p>
+          <button class="day">
+            <span class="material-symbols-outlined">light_mode</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>TRINITY SPORT VILLAGE</h1>
+      <form class="reserve">
+        <h2>PRENOTA ORA!</h2>
+        <!-- NOME -->
+        <label for="nameUser">Nome</label>
+        <input
+          type="text"
+          name="nameUser"
+          id="nameUser"
+          placeholder="Inserire nome"
+        />
+        <!-- COGNOME -->
+        <label for="surnameUser">Cognome</label>
+        <input
+          type="text"
+          name="surnameUser"
+          id="surnameUser"
+          placeholder="Inserire cognome"
+        />
+        <!-- EMAIL -->
+        <label for="emailUser">Email</label>
+        <input
+          type="email"
+          name="emailUser"
+          id="emailUser"
+          placeholder="Inserire email"
+        />
+        <!-- DATA PRENOTAZIONE -->
+        <label for="data">Data prenotazione</label>
+        <input type="date" name="dateAvailables" id="dateAvailables" />
+        <!-- ORARI DISPONIBILI -->
+        <label for="timesAvailable">Orari disponibili</label>
+        <select name="timesAvailable" id="timesAvailable">
+          <option value="">Seleziona orario</option>
+        </select>
+        <!-- CONFERMA PRENOTAZIONE -->
+        <button type="submit" class="btnReserve">CONFERMA PRENOTAZIONE</button>
+      </form>
+    </main>
+    <section>
+      <h2>INFO E CONTATTI</h2>
+      <div class="position">
+        <b>Dove siamo</b>
+        <p>
+          <span class="material-symbols-outlined"> location_on </span>Via S.
+          Giuseppe Lavoratore, 45, 81030 Parete CE
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.2304480233797!2d14.166755799999997!3d40.9545302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b051fa4dfe3d1%3A0xce364cc2c25df5a0!2sTrinity%20Sport%20Village!5e0!3m2!1sit!2sit!4v1792702112788!5m2!1sit!2sit"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+      <div class="contacts">
+        <b>Contatti</b>
+        <p>
+          <span class="material-symbols-outlined"> call </span
+          ><a href="tel:+393349616470">+39 3349616470</a>
+        </p>
+        <br />
+        <b>Seguici sui social</b>
+        <br />
+        <div class="social">
+          <p><i class="fa-brands fa-facebook"></i>Facebook</p>
+          <p><i class="fa-brands fa-instagram"></i>Instagram</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
