@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Trinity Sport Village</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LOGO -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/admin.css" />
+    <script type="module" src="assets/js/admin.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- NAV-BAR -->
+      <div class="nav-bar">
+        <img src="assets/img/logo.png" alt="logo sito web" />
+        <a href="index.html">
+          <button type="button" class="home">
+            <span class="material-symbols-outlined"> home </span>Home
+          </button>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="admin-container">
+        <h1>AREA ADMIN</h1>
+        <p>Gestisci tutte le prenotazioni</p>
+
+        <section class="reservation">
+          <div class="search-reservation">
+            <h2>Ricerca prenotazione</h2>
+
+            <form id="form-search">
+              <div class="campo-ricerca">
+                <label for="cognome">Cognome</label>
+                <input
+                  type="text"
+                  id="cognome"
+                  placeholder="Inserire cognome"
+                />
+              </div>
+              <div class="campo-ricerca">
+                <label for="idReservation">ID</label>
+                <input
+                  type="text"
+                  id="idReservation"
+                  placeholder="Inserire ID"
+                />
+              </div>
+
+              <button type="submit">Cerca</button>
+            </form>
+          </div>
+
+          <div class="filter-reservation">
+            <h2>Filtro prenotazioni</h2>
+
+            <form id="form-filter">
+              <label for="filtro">Stato prenotazione</label>
+
+              <select id="filtro">
+                <option value="all">Tutte le prenotazioni</option>
+                <option value="reserved">Confermate</option>
+                <option value="deleted">Eliminate</option>
+              </select>
+            </form>
+          </div>
+        </section>
+        <!-- RIEPILOGO PRENOTAZIONI -->
+        <section class="riepilogo-prenotazioni">
+          <div class="card-riepilogo confermate">
+            <span class="material-symbols-outlined">calendar_check</span>
+            <p>Prenotazioni confermate</p>
+            <h2 id="totale-confermate">0</h2>
+          </div>
+
+          <div class="card-riepilogo eliminate">
+            <span class="material-symbols-outlined">event_busy</span>
+            <p>Prenotazioni eliminate</p>
+            <h2 id="totale-eliminate">0</h2>
+          </div>
+        </section>
+        <!-- TABLE PRENOTAZIONI -->
+        <section class="table-reservation">
+          <h2>Elenco prenotazioni</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Giorno</th>
+                <th>Orario</th>
+                <th>Stato</th>
+                <th>Azioni</th>
+              </tr>
+            </thead>
+
+            <tbody id="list-reserved">
+              <!-- Le prenotazioni verranno inserite con JavaScript -->
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2026 Trinity Sport Village. Tutti i diritti riservati.</p>
+      <div class="social">
+        <p>
+          <a href="https://www.facebook.com/trinitysportvillage/">
+            <i class="fa-brands fa-facebook"></i> Facebook
+          </a>
+        </p>
+
+        <p>
+          <a href="https://www.instagram.com/trinitysportvillage/">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

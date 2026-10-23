@@ -28,19 +28,26 @@
       <!-- NAV-BAR -->
       <div class="nav-bar">
         <img src="assets/img/logo.png" alt="logo sito web" />
-        <a href="#contatti" class="contacts-navbar">Contatti</a>
+        <!-- CONTATTI -->
+        <a href="#position" class="contacts-navbar">Contatti</a>
         <!-- CAMBIA TEMA -->
         <div class="day-night">
           <p>Cambia tema:</p>
-          <button class="day">
-            <span class="material-symbols-outlined">light_mode</span>
+          <button class="changeTheme">
+            <span class="material-symbols-outlined">dark_mode</span>
           </button>
         </div>
+        <!-- <span class="material-symbols-outlined">light_mode</span> -->
+        <!-- ADMIN BUTTON -->
+        <a href="admin.html" class="admin-navbar">
+          <span class="material-symbols-outlined"> admin_panel_settings </span>
+          Admin
+        </a>
       </div>
     </header>
     <main>
       <h1>TRINITY SPORT VILLAGE</h1>
-      <form class="reserve">
+      <form class="reserve" id="reserve">
         <h2>PRENOTA ORA!</h2>
         <!-- NOME -->
         <label for="nameUser">Nome</label>
@@ -49,6 +56,7 @@
           name="nameUser"
           id="nameUser"
           placeholder="Inserire nome"
+          required
         />
         <!-- COGNOME -->
         <label for="surnameUser">Cognome</label>
@@ -57,6 +65,7 @@
           name="surnameUser"
           id="surnameUser"
           placeholder="Inserire cognome"
+          required
         />
         <!-- EMAIL -->
         <label for="emailUser">Email</label>
@@ -65,13 +74,24 @@
           name="emailUser"
           id="emailUser"
           placeholder="Inserire email"
+          required
+        />
+        <!-- NUMERO DI TELEFONO -->
+        <label for="phoneNumberUser">Numero di telefono</label>
+        <input
+          type="tel"
+          name="phoneNumberUser"
+          id="phoneNumberUser"
+          placeholder="Inserire numero di telefono"
+          pattern="[0-9]+"
+          required
         />
         <!-- DATA PRENOTAZIONE -->
-        <label for="data">Data prenotazione</label>
-        <input type="date" name="dateAvailables" id="dateAvailables" />
+        <label for="dateAvailables">Data prenotazione</label>
+        <input type="date" name="dateAvailables" id="dateAvailables" required />
         <!-- ORARI DISPONIBILI -->
         <label for="timesAvailable">Orari disponibili</label>
-        <select name="timesAvailable" id="timesAvailable">
+        <select name="timesAvailable" id="timesAvailable" required>
           <option value="">Seleziona orario</option>
         </select>
         <!-- CONFERMA PRENOTAZIONE -->
@@ -80,7 +100,7 @@
     </main>
     <section>
       <h2>INFO E CONTATTI</h2>
-      <div class="position">
+      <div class="position" id="position">
         <b>Dove siamo</b>
         <p>
           <span class="material-symbols-outlined"> location_on </span>Via S.
@@ -102,14 +122,23 @@
           <span class="material-symbols-outlined"> call </span
           ><a href="tel:+393349616470">+39 3349616470</a>
         </p>
-        <br />
-        <b>Seguici sui social</b>
-        <br />
-        <div class="social">
-          <p><i class="fa-brands fa-facebook"></i>Facebook</p>
-          <p><i class="fa-brands fa-instagram"></i>Instagram</p>
-        </div>
       </div>
     </section>
+    <footer>
+      <p>&copy; 2026 Trinity Sport Village. Tutti i diritti riservati.</p>
+      <div class="social">
+        <p>
+          <a href="https://www.facebook.com/trinitysportvillage/">
+            <i class="fa-brands fa-facebook"></i> Facebook
+          </a>
+        </p>
+
+        <p>
+          <a href="https://www.instagram.com/trinitysportvillage/">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
