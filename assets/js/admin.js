@@ -140,6 +140,11 @@ formSearch.addEventListener("submit", (e) => {
   mostraPrenotazioni();
 });
 
+function aggiornaRiepilogo() {
+  totaleConfermate.textContent = prenotazioni.length;
+  totaleEliminate.textContent = prenotazioniEliminate.length;
+}
+
 cognome.addEventListener("input", mostraPrenotazioni);
 idReservation.addEventListener("input", mostraPrenotazioni);
 filtro.addEventListener("change", mostraPrenotazioni);
