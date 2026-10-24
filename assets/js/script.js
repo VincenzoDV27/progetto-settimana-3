@@ -15,7 +15,7 @@ const inputs = document.querySelectorAll(".reserve input");
 const select = document.querySelector(".reserve select");
 const btnReserve = document.querySelector(".btnReserve");
 
-// LOCALSTORAGE DELLE PRENOTAZIONI
+// LOCALSTORAGE DELLE PRENOTAZIONI []
 let prenotazioni;
 
 if (localStorage.getItem("prenotazioni") !== null) {
@@ -89,6 +89,7 @@ function mostraOrari() {
 
 mostraOrari();
 
+// richiama la funzione per ogni volta che cambio data in fase di compilazione
 dataPrenotazione.addEventListener("change", () => {
   mostraOrari();
 });

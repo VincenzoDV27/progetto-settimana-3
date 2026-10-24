@@ -144,6 +144,6 @@ cognome.addEventListener("input", mostraPrenotazioni);
 idReservation.addEventListener("input", mostraPrenotazioni);
 filtro.addEventListener("change", mostraPrenotazioni);
 
-EXEC;
+// EXEC
 mostraPrenotazioni();
 aggiornaRiepilogo();
